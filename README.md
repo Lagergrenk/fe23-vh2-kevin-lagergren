@@ -7,7 +7,6 @@ The Post-it Notes Web App is a simple, user-friendly application designed to hel
 Using the Post-it Notes Web App is straightforward:
 
 1. **Adding a Note:**
-   - Navigate to the main page of the web app.
    - In the "Post-it title" field, enter the title of your note.
    - In the "Post-it text" area below, enter the content of your note.
    - Click the "Add" button to create your note. It will appear in the list of notes below the form.
