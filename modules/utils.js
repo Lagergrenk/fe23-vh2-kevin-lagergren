@@ -1,7 +1,7 @@
 import { deleteNote } from "./firebase/crudfirebase.js";
 import { displayNotes } from "./display.js";
 
-function createPostItNote(noteId, title, content) {
+function createPostItNote(noteId, title, content,color) {
   const postItTitle = document.createElement("h2");
   postItTitle.textContent = title;
   const postItContent = document.createElement("p");
@@ -10,7 +10,7 @@ function createPostItNote(noteId, title, content) {
   note.classList.add("post-it");
   note.appendChild(postItTitle);
   note.appendChild(postItContent);
-
+  note.style.backgroundColor=color;
   const deleteBtn = document.createElement("button");
   deleteBtn.textContent = "Delete";
   deleteBtn.classList.add("post-it__delete");

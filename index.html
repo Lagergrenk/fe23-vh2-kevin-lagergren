@@ -1,44 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Post-it notes</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Post-it notes</title>
 
-    <link rel="stylesheet" href="./css/style.css" />
-    <script type="module" src="./modules/main.js" defer></script>
+        <link rel="stylesheet" href="./css/style.css" />
+        <script type="module" src="./modules/main.js" defer></script>
 
-    <!-- FIRBASE DB -->
-    <script
-      src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"
-      defer
-    ></script>
-  </head>
-  <body>
-    <header class="header">
-        <div class="post-it__header">
-            <h2 class="post-it__title">Post-it notes</h2>
-          </div>
-    </header>
-    <main class="main">
-      <section class="post-it__top">
-        <form class="post-it__content">
-            <input type="text" placeholder="Post-it title" class="post-it__input-title">
-            <textarea
-              name="post-it__content"
-              id="post-it__content"
-              cols="30"
-              rows="10"
-              placeholder="Post-it text"
-              class="post-it__input-content"></textarea>
-              <div class="post-it__button-container">
-                <button class="post-it__add" id="addPostIt">Add</button>
-              </div>
-
-        </form>
-        </div>
-      </section>
-      <section class="post-it__list"></section>
-    </main>
-  </body>
+        <!-- FIRBASE DB -->
+        <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js" defer></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="post-it__header">
+                <h2 class="post-it__title">Post-it notes</h2>
+            </div>
+        </header>
+        <main class="main">
+            <section class="post-it__top">
+                <form class="post-it__content">
+                    <input type="text" placeholder="Post-it title" class="post-it__input-title" />
+                    <textarea name="post-it__content" id="post-it__content" cols="30" rows="10" placeholder="Post-it text" class="post-it__input-content"></textarea>
+        <!--             <select>
+                        <option value="red">red</option>
+                        <option value="red">red</option>
+                        <option value="red">red</option>
+                        <option value="red">red</option>
+                    </select> -->
+                    <label for="colorPicker">color picker:</label>
+                    <input id="colorPicker" type="color" value="#ffff00" name="colorPicker" id="">
+                    <div class="post-it__button-container">
+                        <button class="post-it__add" id="addPostIt">Add</button>
+                    </div>
+                </form>
+            </section>
+            <section class="post-it__list"></section>
+        </main>
+    </body>
 </html>
