@@ -7,7 +7,7 @@ async function displayNotes() {
   notesContainer.innerHTML = "";
 
   Object.entries(notes).forEach(([noteId, noteData]) => {
-    createPostItNote(noteId, noteData.title, noteData.content);
+    createPostItNote(noteId, noteData.title, noteData.content, noteData.color);
   });
 }
 

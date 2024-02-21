@@ -7,12 +7,13 @@ import {
   push,
 } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
 
-async function addNote(title, content) {
+async function addNote(title, content,color) {
   const notesRef = ref(db, "notes");
   const newNoteRef = push(notesRef);
   set(newNoteRef, {
     title: title,
     content: content,
+    color: color //alriks nya sak
   });
   console.log("Added note with id " + newNoteRef.key);
 }
